@@ -23,8 +23,8 @@ let animals = [
 ]
 
 function listen(animals) {
-    let sounds = [];
     let output = '';
+    let sounds = [];
 
     sounds.push(new Dog('say'));
     sounds.push(new Cat('say'));
@@ -36,5 +36,6 @@ function listen(animals) {
 
     return sounds;
 }
+
 
 
