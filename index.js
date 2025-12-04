@@ -25,20 +25,16 @@ let animals = [
 function listen(animals) {
     let say = ''
     let sounds = [];
-
+   
+   
     sounds.push(new cat('say'));
     sounds.push(new dog('say'));
     sounds.push(new bird('say'));
-
+   
+   
     animals.forEach(animal => {
         say += `${animals.draw()}`
     });
 
     return sounds;
 }
-
-
-
-
-
-
