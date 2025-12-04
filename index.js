@@ -26,8 +26,8 @@ function listen(animals) {
     let output = ''
     let sounds = [];
 
-    sounds.push(new Dog('say'));
     sounds.push(new Cat('say'));
+    sounds.push(new Dog('say'));
     sounds.push(new Bird('say'));
 
     animals.forEach(animal => {
@@ -36,6 +36,7 @@ function listen(animals) {
 
     return sounds;
 }
+
 
 
 
