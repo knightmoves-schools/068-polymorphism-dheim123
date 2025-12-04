@@ -20,18 +20,12 @@ let animals = [
     new Cat(),
     new Dog(),
     new Bird()
-]
-
-function listen(animals) {
-    let sounds = [];
-    let output = '';
-
-    sounds.push(new Dog('say'));
-    sounds.push(new Cat('say'));
-    sounds.push(new Bird('say'));
+];
+function getAnimalSounds(animals) {
+    let sounds = []; 
 
     animals.forEach(animal => {
-        output += `${sounds.draw()}<br>`
+        sounds.push(animal.say()); 
     });
 
     return sounds;
