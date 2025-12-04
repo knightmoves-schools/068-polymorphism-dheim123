@@ -24,8 +24,11 @@ let animals = [
 
 function listen(animals) {
     let sounds = [];
+    let output = '';
 
-    sounds.push(new Input('meow', 'woof', 'Chirp'));
+    sounds.push(new Dog('say'));
+    sounds.push(new Cat('say'));
+    sounds.push(new Bird('say'));
 
     animals.forEach(animal => {
         output += `${sounds.draw()}<br>`
@@ -33,4 +36,5 @@ function listen(animals) {
 
     return sounds;
 }
+
 
